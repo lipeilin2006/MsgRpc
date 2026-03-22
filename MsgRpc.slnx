@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MsgRpc.Generator/MsgRpc.Generator.csproj" />
+  <Project Path="MsgRpc.Test/MsgRpc.Test.csproj" />
+  <Project Path="MsgRpc/MsgRpc.csproj" />
+</Solution>
