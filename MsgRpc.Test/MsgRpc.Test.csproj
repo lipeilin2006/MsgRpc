@@ -15,14 +15,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../MsgRpc.Generator/MsgRpc.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-    <ProjectReference Include="../MsgRpc/MsgRpc.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MessagePack" Version="3.1.4" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.5" />
+    <PackageReference Include="MsgRpc" Version="1.0.1" />
   </ItemGroup>
 
 </Project>

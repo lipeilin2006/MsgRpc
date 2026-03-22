@@ -7,7 +7,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <PackageId>MsgRpc</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>lipeilin2006</Authors>
     <Description>High-performance RPC framework for .NET.</Description>
     <PackageProjectUrl>https://github.com/lipeilin2006/MsgRpc</PackageProjectUrl>
@@ -22,7 +22,7 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.5" />
 
-    <PackageReference Include="MsgRpc.Generator" Version="1.0.0" PrivateAssets="all" />
+    <PackageReference Include="MsgRpc.Generator" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\LICENSE" Pack="true" PackagePath="\" />
