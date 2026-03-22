@@ -7,10 +7,32 @@
     <LangVersion>latest</LangVersion>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
     <IncludeBuildOutput>false</IncludeBuildOutput>
+
+    <IsRoslynComponent>true</IsRoslynComponent> 
+    <AnalyzerLanguage>cs</AnalyzerLanguage>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <DevelopmentDependency>true</DevelopmentDependency>
+
+    <PackageId>MsgRpc.Generator</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>lipeilin2006</Authors>
+    <Description>High-performance RPC framework for .NET.</Description>
+    <PackageProjectUrl>https://github.com/lipeilin2006/MsgRpc</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lipeilin2006/MsgRpc</RepositoryUrl>
+    <PackageTags>rpc;msgpack;source-generator;high-performance</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.3.0" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="5.3.0" PrivateAssets="all" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
 </Project>
